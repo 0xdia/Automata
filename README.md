@@ -1,1 +1,1 @@
-# turing_machines_emulator
+# Turing machines emulator
