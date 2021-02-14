@@ -1,1 +1,1 @@
-# Turing machines emulator
+# Automata
