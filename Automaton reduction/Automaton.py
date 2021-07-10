@@ -128,6 +128,3 @@ class Automaton:
       I.append(i)
 
     return Automaton(self.X, S, self.S0, F, I) 
-    
-
-

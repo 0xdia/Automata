@@ -14,7 +14,6 @@ if __name__ == '__main__':
     automaton = Automaton(X, S, S0, F, I)
     automaton.print_parameters()
     print(40 * '-')
-#automaton.test()
     equivalent_automaton = automaton.reduce()
     equivalent_automaton.print_parameters()
 
