@@ -20,7 +20,7 @@ public class DFA {
 
   static boolean wordBelongsToLanguage(String word) {
     int startState = 0;
-    int finalState = 3;
+    int finalState = 1;
 
     int currentState = startState;
 
@@ -35,7 +35,7 @@ public class DFA {
       currentState = transitionTable[currentState][word.charAt(i)-'0'];
     }
 
-    return currentState == 1;
+    return currentState == finalState;
   }
 
   public static void main(String[] args) {
