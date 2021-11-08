@@ -30,9 +30,13 @@ public class DFA {
                                 {0, 3},
                                 {1, 2}
                               };
-
-    for (int i=0; i<word.length(); i++) {
-      currentState = transitionTable[currentState][word.charAt(i)-'0'];
+    try {
+      for (int i=0; i<word.length(); i++) {
+        currentState = transitionTable[currentState][word.charAt(i)-'0'];
+      }
+    }
+    catch (Exception e) {
+      return false;
     }
 
     return currentState == finalState;
